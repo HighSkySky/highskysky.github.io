@@ -1,0 +1,23 @@
+@import '~@/style/colors.scss';
+
+.module {
+  padding: 80px;
+  flex-direction: column;
+
+  :global {
+    .header-title {
+      display: block;
+      padding: 4px 12px;
+      margin: 0;
+      color: $gray-1;
+      background-color: $primary-color;
+      font-size: 20px;
+    }
+
+    .header-content {
+      padding: 16px 0;
+      color: $title-color;
+      font-size: 16px;
+    }
+  }
+}
