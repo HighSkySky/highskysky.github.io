@@ -1,0 +1,9 @@
+{
+  "extends": ["tslint-config-egg"],
+  "linterOptions": {
+    "exclude": [
+      "node_modules/**",
+      "typings/**"
+    ]
+  }
+}
