@@ -8,7 +8,7 @@
 1. 拉取代码
 git clone https://github.com/HighSkySky/highskysky.github.io.git
 2. 上传 https 证书
-scp -r ssl username@192.168.0.1:~/highskysky.github.io/nginx/ssl
+scp -r nginx/ssl username@192.168.0.1:~/highskysky.github.io/nginx/ssl
 
 启动 nginx：
 docker-compose up -d

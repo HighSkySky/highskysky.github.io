@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "build:api": "bash scripts/build-api.sh",
     "build:blog": "bash scripts/build-blog.sh"
   },
   "repository": "git@github.com:HighSkySky/highskysky.github.io.git",

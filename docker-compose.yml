@@ -1,4 +1,10 @@
 version: '3'
+
+networks:
+  blog_network:
+    driver: bridge  
+
+
 services:
   nginx:
     restart: always
@@ -10,3 +16,15 @@ services:
       - ./nginx/ssl:/ssl
       - ./nginx/conf.d:/etc/nginx/conf.d
       - ./nginx/pages:/usr/share/nginx/html
+    networks:
+      - blog_network
+
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: always
+    ports:
+      - 7001:7001
+    networks:
+      - blog_network
