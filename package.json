@@ -1,0 +1,11 @@
+{
+  "name": "highskysky.github.io",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build:blog": "bash scripts/build-blog.sh"
+  },
+  "repository": "git@github.com:HighSkySky/highskysky.github.io.git",
+  "author": "highskysky <highskysky97@gmail.com>",
+  "license": "MIT"
+}
